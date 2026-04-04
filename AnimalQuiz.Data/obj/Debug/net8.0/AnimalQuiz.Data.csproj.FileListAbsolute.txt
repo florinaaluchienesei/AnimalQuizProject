@@ -1,0 +1,15 @@
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\bin\Debug\net8.0\AnimalQuiz.Data.deps.json
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\bin\Debug\net8.0\AnimalQuiz.Data.dll
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\bin\Debug\net8.0\AnimalQuiz.Data.pdb
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\bin\Debug\net8.0\AnimalQuiz.Models.dll
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\bin\Debug\net8.0\AnimalQuiz.Models.pdb
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.csproj.AssemblyReference.cache
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.AssemblyInfoInputs.cache
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.AssemblyInfo.cs
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.csproj.CoreCompileInputs.cache
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQu.12452242.Up2Date
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.dll
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\refint\AnimalQuiz.Data.dll
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\AnimalQuiz.Data.pdb
+C:\Users\flori\Desktop\PIU\AnimalQuiz.Data\obj\Debug\net8.0\ref\AnimalQuiz.Data.dll
