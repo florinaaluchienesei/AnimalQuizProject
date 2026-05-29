@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimalQuiz.WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c0bbb8eb09e9e69782a608595d6d097073e5a13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a289137ecec8167c54765dcc713885093449e79")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimalQuiz.WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimalQuiz.WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
