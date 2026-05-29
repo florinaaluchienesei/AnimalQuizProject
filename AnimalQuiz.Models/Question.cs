@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace AnimalQuiz
 {
@@ -9,6 +10,7 @@ namespace AnimalQuiz
 
         public AnimalType Animal { get; set; }
         public Difficulty Level { get; set; }
+        public DateTime CreatedDate { get; set; }
 
         public Question()
         {

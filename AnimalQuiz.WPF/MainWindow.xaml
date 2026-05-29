@@ -1,0 +1,316 @@
+﻿<Window x:Class="AnimalQuiz.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AnimalQuiz"
+        Height="720"
+        Width="1350"
+        Background="#FFF7D6"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#4DA3FF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0,5,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="0,5,0,10"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+    </Window.Resources>
+
+    <DockPanel>
+
+       
+        <Menu DockPanel.Dock="Top">
+
+            <MenuItem Header="Fișier">
+                <MenuItem Header="Curăță formular"
+                          Click="MenuClear_Click"/>
+                <Separator/>
+                <MenuItem Header="Ieșire"
+                          Click="MenuExit_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Întrebări">
+                <MenuItem Header="Căutare"
+                          Click="MenuSearch_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Ajutor">
+                <MenuItem Header="Despre"
+                          Click="MenuAbout_Click"/>
+            </MenuItem>
+
+        </Menu>
+
+        <Grid Margin="20">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Border Grid.Column="0"
+                    Background="White"
+                    CornerRadius="30"
+                    Padding="18"
+                    BorderBrush="#B8E986"
+                    BorderThickness="2"
+                    Margin="0,0,12,0">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                    <StackPanel>
+
+                        <TextBlock Text="🐾 Date întrebare"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,20"/>
+
+                        <Label x:Name="lblSound"
+                               Content="Sunet întrebare:"/>
+
+                        <Button Content="🔊 Alege sunet"
+                                Click="BtnChooseSound_Click"/>
+
+                        <TextBlock x:Name="txtSoundPath"
+                                   Text="Niciun sunet ales"
+                                   TextWrapping="Wrap"
+                                   Margin="0,0,0,10"/>
+
+                        <Button Content="▶ Redă sunet"
+                                Background="#90BE6D"
+                                Click="BtnPlaySound_Click"/>
+
+                        <MediaElement x:Name="mediaSound"
+                                      LoadedBehavior="Manual"
+                                      UnloadedBehavior="Stop"
+                                      Height="0"/>
+
+                        <Label x:Name="lblAnimal"
+                               Content="Animal:"/>
+
+                        <ComboBox x:Name="cmbAnimal">
+
+                            <ComboBoxItem Content="Pisica"/>
+                            <ComboBoxItem Content="Caine"/>
+                            <ComboBoxItem Content="Vaca"/>
+                            <ComboBoxItem Content="Cal"/>
+                            <ComboBoxItem Content="Porc"/>
+                            <ComboBoxItem Content="Oaie"/>
+                            <ComboBoxItem Content="Magar"/>
+
+                        </ComboBox>
+
+                        <Label x:Name="lblDifficulty"
+                               Content="Dificultate:"/>
+
+                        <StackPanel Margin="0,0,0,10">
+
+                            <RadioButton x:Name="rbUsor"
+                                         Content="Usor"/>
+
+                            <RadioButton x:Name="rbMediu"
+                                         Content="Mediu"/>
+
+                            <RadioButton x:Name="rbGreu"
+                                         Content="Greu"/>
+
+                        </StackPanel>
+
+                        <Button Content="🎮 Start Joc"
+                                Height="55"
+                                Background="#FF8C42"
+                                Click="BtnStartGame_Click"/>
+
+                        <Button Content="💾 Salvează întrebarea"
+                                Height="55"
+                                Background="#4CAF50"
+                                Click="Button_Click"/>
+
+                        <Button Content="✏ Modifică întrebarea"
+                                Height="55"
+                                Background="#FFB703"
+                                Click="BtnModify_Click"/>
+
+                        <Button Content="🗑 Șterge întrebarea"
+                                Height="55"
+                                Background="#FF6B6B"
+                                Click="BtnDeleteQuestion_Click"/>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </Border>
+
+           
+            <Border Grid.Column="1"
+                    Background="White"
+                    CornerRadius="30"
+                    Padding="18"
+                    BorderBrush="#B8E986"
+                    BorderThickness="2"
+                    Margin="0,0,12,0">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                    <StackPanel>
+
+                        <TextBlock Text="🐾 AnimalQuiz"
+                                   FontSize="34"
+                                   FontWeight="Bold"
+                                   Margin="0,0,0,20"/>
+
+                       
+                        <Border BorderBrush="#CFCFCF"
+                                BorderThickness="1"
+                                CornerRadius="30"
+                                Padding="10"
+                                Margin="0,0,0,15">
+
+                            <StackPanel>
+
+                                <Image x:Name="imgCorrect"
+                                       Height="220"
+                                       Stretch="UniformToFill"/>
+
+                                <Label x:Name="lblCorrectImage"
+                                       Content="Imagine corectă:"/>
+
+                                <Button Content="✔ Alege imagine corectă"
+                                        Background="#4CAF50"
+                                        Click="BtnChooseCorrectImage_Click"/>
+
+                                <TextBlock x:Name="txtCorrectImagePath"
+                                           Text="Nicio imagine aleasă"
+                                           TextWrapping="Wrap"/>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        
+                        <Border BorderBrush="#CFCFCF"
+                                BorderThickness="1"
+                                CornerRadius="30"
+                                Padding="10"
+                                Margin="0,0,0,15">
+
+                            <StackPanel>
+
+                                <Image x:Name="imgWrong1"
+                                       Height="220"
+                                       Stretch="UniformToFill"/>
+
+                                <Label x:Name="lblWrongImage1"
+                                       Content="Imagine greșită 1:"/>
+
+                                <Button Content="❌ Alege imagine greșită 1"
+                                        Background="#FF6B6B"
+                                        Click="BtnChooseWrongImage1_Click"/>
+
+                                <TextBlock x:Name="txtWrongImage1Path"
+                                           Text="Nicio imagine aleasă"
+                                           TextWrapping="Wrap"/>
+
+                            </StackPanel>
+
+                        </Border>
+
+                        <Border BorderBrush="#CFCFCF"
+                                BorderThickness="1"
+                                CornerRadius="30"
+                                Padding="10">
+
+                            <StackPanel>
+
+                                <Image x:Name="imgWrong2"
+                                       Height="220"
+                                       Stretch="UniformToFill"/>
+
+                                <Label x:Name="lblWrongImage2"
+                                       Content="Imagine greșită 2:"/>
+
+                                <Button Content="❌ Alege imagine greșită 2"
+                                        Background="#FF6B6B"
+                                        Click="BtnChooseWrongImage2_Click"/>
+
+                                <TextBlock x:Name="txtWrongImage2Path"
+                                           Text="Nicio imagine aleasă"
+                                           TextWrapping="Wrap"/>
+
+                            </StackPanel>
+
+                        </Border>
+
+                    </StackPanel>
+
+                </ScrollViewer>
+
+            </Border>
+
+            
+            <Border Grid.Column="2"
+                    Background="White"
+                    CornerRadius="30"
+                    Padding="18"
+                    BorderBrush="#B8E986"
+                    BorderThickness="2">
+
+                <StackPanel>
+
+                    <TextBlock Text="🔎 Căutare întrebări"
+                               FontSize="30"
+                               FontWeight="Bold"
+                               Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Caută după animal:"/>
+
+                    <ComboBox x:Name="cmbSearchAnimal">
+
+                        <ComboBoxItem Content="Pisica"/>
+                        <ComboBoxItem Content="Caine"/>
+                        <ComboBoxItem Content="Vaca"/>
+                        <ComboBoxItem Content="Cal"/>
+                        <ComboBoxItem Content="Porc"/>
+                        <ComboBoxItem Content="Oaie"/>
+                        <ComboBoxItem Content="Magar"/>
+
+                    </ComboBox>
+
+                    <Button Content="🔍 Caută"
+                            Click="BtnSearch_Click"/>
+
+                    <ListBox x:Name="lstResults"
+                             Margin="0,15,0,0"
+                             Height="300"
+                             SelectionChanged="lstResults_SelectionChanged"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </Grid>
+
+    </DockPanel>
+
+</Window>
