@@ -4,7 +4,11 @@
     {
         Pisica,
         Caine,
-        Leu,
-        Elefant
+        Vaca,
+        Cal,
+        Porc,
+        Oaie,
+        Magar
+     
     }
 }

@@ -9,3 +9,15 @@ C:\Users\flori\Desktop\PIU\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.
 C:\Users\flori\Desktop\PIU\AnimalQuiz.Models\obj\Debug\net8.0\refint\AnimalQuiz.Models.dll
 C:\Users\flori\Desktop\PIU\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.pdb
 C:\Users\flori\Desktop\PIU\AnimalQuiz.Models\obj\Debug\net8.0\ref\AnimalQuiz.Models.dll
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\bin\Debug\net8.0\AnimalQuiz.Models.deps.json
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\bin\Debug\net8.0\AnimalQuiz.Models.dll
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\bin\Debug\net8.0\AnimalQuiz.Models.pdb
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.AssemblyInfoInputs.cache
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.AssemblyInfo.cs
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.csproj.CoreCompileInputs.cache
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.sourcelink.json
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.dll
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\refint\AnimalQuiz.Models.dll
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\AnimalQuiz.Models.pdb
+C:\Users\flori\Desktop\PIU\AnimalQuizProject\AnimalQuiz.Models\obj\Debug\net8.0\ref\AnimalQuiz.Models.dll

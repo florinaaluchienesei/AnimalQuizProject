@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuiz.Models\\AnimalQuiz.Models.csproj",
+      "projectUniqueName": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuizProject\\AnimalQuiz.Models\\AnimalQuiz.Models.csproj",
       "projectName": "AnimalQuiz.Models",
-      "projectPath": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuiz.Models\\AnimalQuiz.Models.csproj",
+      "projectPath": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuizProject\\AnimalQuiz.Models\\AnimalQuiz.Models.csproj",
       "packagesPath": "C:\\Users\\flori\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuiz.Models\\obj\\",
+      "outputPath": "C:\\Users\\flori\\Desktop\\PIU\\AnimalQuizProject\\AnimalQuiz.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\flori\\AppData\\Roaming\\NuGet\\NuGet.Config",
